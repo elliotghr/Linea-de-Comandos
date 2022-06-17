@@ -1,0 +1,40 @@
+Opciones para linea de comandos
+    1.-Símbolo del sistema
+    2.-Power Sheel - Terminal orientada al desarrollo
+    * Mejores alternativas
+    3.-Windows for Subsystem Linux
+    4.-GitBash
+
+GUI GraphicUserInterface vs CL ComandLineInterface
+    /   Raíz del Símbolo
+    ~   Representa el caracter del Home del usuario
+Comando pwd
+    pwd Devuelve la ruta (print work directory)
+Comando whoami
+    whoami  Como se llama el usuario que está usando la pc
+Comando help
+    help Imprime todos los comandos que pueden dar ayuda
+    -L,,-LP-LW Son conocidas como banderas
+    Ej. help pwd, pwd --help o en algunos casos pwd -h  obtienen todas las banderas y la descripción del comando pwd
+Manejo de historial de comandos
+    Usando la flecha de arriba y abajo recuerda los ultimos 20 comandos ejecutados
+Comando clear
+    Limpia la pantalla de la Terminal
+Comando ls
+    Comando para listar los archivos de la rura donde te encuentras
+    ls -l   Muestra más opciones de las carpetas y los archivos
+    ls -a   Trae todos los archivos incluidos los archivos ocultos
+    Se pueden combinar las banderas como ls -a -l
+Comando cd
+    Para cambiar de directorio
+Atajos para el comando cd
+    Usando el tabulador se autocompleta la busqueda
+    Arrastrando la carpeta se pega la ruta para acceder a ella
+Comodines para el comando cd
+    Usando cd ~ Nos vamos a la carpeta del usuario instantaneamente
+    Usando cd . Cambia al directorio actual
+    Usando  cd .. Para subir a un direcotrio padre
+    Usando  cd ../.. Para regresar varios niveles
+    Usando  /   Para ir a la raiz
+    Usando  /c   Para ir al disco local C
+    Usando  -   Para regresar al directorio anterior donde estabas
