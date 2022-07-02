@@ -8,28 +8,38 @@ Opciones para linea de comandos
 GUI GraphicUserInterface vs CL ComandLineInterface
     /   Raíz del Símbolo
     ~   Representa el caracter del Home del usuario
+
 Comando pwd
     pwd Devuelve la ruta (print work directory)
+    Imprime en pantalla el directorio en donde te encuentras
+
 Comando whoami
     whoami  Como se llama el usuario que está usando la pc
+    
 Comando help
     help Imprime todos los comandos que pueden dar ayuda
     -L,,-LP-LW Son conocidas como banderas
     Ej. help pwd, pwd --help o en algunos casos pwd -h  obtienen todas las banderas y la descripción del comando pwd
+
 Manejo de historial de comandos
     Usando la flecha de arriba y abajo recuerda los ultimos 20 comandos ejecutados
+
 Comando clear
     Limpia la pantalla de la Terminal
+
 Comando ls
     Comando para listar los archivos de la rura donde te encuentras
     ls -l   Muestra más opciones de las carpetas y los archivos
     ls -a   Trae todos los archivos incluidos los archivos ocultos
     Se pueden combinar las banderas como ls -a -l
+
 Comando cd
     Para cambiar de directorio
+
 Atajos para el comando cd
     Usando el tabulador se autocompleta la busqueda
     Arrastrando la carpeta se pega la ruta para acceder a ella
+
 Comodines para el comando cd
     Usando cd ~ Nos vamos a la carpeta del usuario instantaneamente
     Usando cd . Cambia al directorio actual
@@ -38,3 +48,59 @@ Comodines para el comando cd
     Usando  /   Para ir a la raiz
     Usando  /c   Para ir al disco local C
     Usando  -   Para regresar al directorio anterior donde estabas
+
+Comando touch
+    touch para crear archivos 
+
+Comando echo
+    echo "contenido" > archivo.txt Para crear archivos con contenido
+
+Comando cat
+    Cat archivo.txt para mostrar el contenido de nuestro archivo 
+
+Comando Mkdir
+    Mkdir para crear una carpeta
+
+Comando rmdir
+    rmdir Para eliminar carpetas
+
+Comando rm
+    rm para eliminar archivos
+    rm -r para eliminar directorios con contenido 
+        Con -f forzas la eliminación matando los procesos que estaban en ese momento y borrando la carpeta si o si
+
+Comando Mv
+    Mv archivo.txt carpeta_a_mover.  Para mover un archivo 
+    Mv archivo.txt renombre.txt para renombrar un archivo
+
+Comando Cp
+    Cp archivo.txt ruta - Para copiar
+    Cp ../renombre.txt - Para copiar un archivo y renombrarlo
+    Cp -r carpeta_a_copiar carpeta_donde_copiaras
+
+Comando find
+    find Para buscar carpetas o archivos, lo hace de forma recursiva, también acepta expresiones regulares, con a* buscamos todo lo que empiece con a, se recomienda mirar la documentación de este comando
+C
+omando ps
+    Lista los procesos activos de la computradora
+    Es como abrir el administrador de tareas y ver los procesos activos que tienes
+    Debemos tener cuidado con eliminar o matar un proceso 
+
+Comando kill
+    Comando para matar un proceso
+    Pasamos como parametro el ID del proceso
+    kill ID_proceso
+
+Comando para abrir editores
+    nano salir con ctl + x
+    vim salir con :q
+    code (code espacio) para abrir Visual Studio code
+    code . Para abrir una carpeta en el Visual Studio code
+
+Comando alias
+    Te muestra comandos creados como atajos a otros comandos
+    Los nombres de los alais no deben coincidir con los comandos existentes
+    Los alias se crean con: alias test='touch hola.txt'
+
+Comando unaalias
+    Comando para eliminar un alias: unalias test
